@@ -4,6 +4,11 @@
 {% block content %}
 <h1>Menu</h1>
 <section>
-    
+{% for menu in menus%}
+  <article>
+    <h2><a href="{% url 'menu_single' pk=menu.id %}">{{menu.name}}</a></h2>
+    <p>${{menu.price}}</p>
+  </article>
+{% endfor %}
 </section>
 {% endblock %}

@@ -25,3 +25,7 @@ def book(request):
 def menu(request):
     menus = Menu.objects.all()
     return render(request, 'menu.html',{"menus" : menus})
+
+def menu_single(request, pk):
+    menu = Menu.objects.get(pk=pk)
+    return render(request, 'menu_single.html', {"menu" : menu})

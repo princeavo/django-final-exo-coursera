@@ -1,0 +1,59 @@
+# Fichiers de configuration d'environnement
+*.env
+
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.so
+
+# Dossiers de compilation
+build/
+dist/
+.eggs/
+*.egg-info/
+.installed.cfg
+lib/
+lib64/
+include/
+bin/
+
+# Dossiers de virtualenv
+venv/
+env/
+ENV/
+.venv/
+.virtualenv/
+
+# Fichiers de base de données
+db.sqlite3
+*.sqlite3
+
+# Fichiers média et téléchargements
+upload/
+media/
+
+# Dossiers de fichiers statiques générés
+staticfiles/
+restaurant/static/
+
+# Fichiers d'archive
+*.tar.gz
+*.zip
+
+# Caches
+*.log
+*.pot
+*.pyc
+
+# IDEs (ex: VS Code, PyCharm, etc.)
+.vscode/
+.idea/
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini

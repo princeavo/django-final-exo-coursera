@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<h1>Menu Item</h1>
+<div style="margin-bottom: 30px;">
+    <a href="{% url 'home' %}">Home</a>/
+    <a href="{% url 'menu' %}">Menu</a>/
+    {{ menu.name }}
+</div>
+<div style="display: flex;justify-content: center;">
+    <div>
+        <h2>{{ menu.name }}</h2>
+        <p>{{menu.description}}</p>
+        <p>Price ${{menu.price}}</p>
+    </div>
+    <img src="{{ menu.image.url }}" alt='{{menu.name}}'>
+</div>
+<div>
+    <a href="{% url 'menu' %}">Back to Menu</a>
+</div>
+{% endblock %}
